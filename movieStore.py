@@ -2,11 +2,11 @@ class MovieStore:
 #Part 2.1 Creating initializer
     def __init__(self, name, num_movie, avail_movies, rent_fee, late_fee):
         self.__self = self
-        self.__name = str(name)
-        self.__num_movie = int(num_movie)
-        self.__avail_movies = int(avail_movies)
-        self.__rent_fee = float(rent_fee)
-        self.__late_fee = float(late_fee)
+        self.__name = name
+        self.__num_movie = num_movie
+        self.__avail_movies = avail_movies
+        self.__rent_fee = rent_fee
+        self.__late_fee = late_fee
 #Part 2.2 Define accessors and mutators
     def getName(self):
         return self.__name
