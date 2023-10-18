@@ -19,3 +19,11 @@ late_fee = customer_1.getLateFee
 print(f"This is the late fee per day: {late_fee}")
 
 
+user = input("Do you wish to rent or return movies?: (rent/return)").lower
+if user == 'rent':
+    print(customer_1.rentMovie)
+else:
+    print(customer_1.returnMovie())
+
+customer_1 = MovieStore("maryam", 40, 15, 5.2325, 0.99)
+
