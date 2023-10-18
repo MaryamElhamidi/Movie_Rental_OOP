@@ -27,3 +27,23 @@ else:
 
 customer_1 = MovieStore("maryam", 40, 15, 5.2325, 0.99)
 
+#Bonus
+
+class Bonus:
+    welcome = input("Would you like to be presentended with a menu of three options' (yes/no): ").lower()
+    if welcome == "yes":
+        print("1. Rent Movies")
+        print("2. Return Movies")
+        print("3. Calculate Late Fees")
+        print("4. Exit")
+        choice = input("Pick from options 1,2,3,4: ")
+        if choice == 1:
+            print(customer_1.rentMovie())
+        elif choice == 2:
+            print(customer_1.returnMovie())
+        elif choice == 3:
+            print(customer_1.calculateLateFee)
+        else:
+            print("Goodbye.")
+    else: 
+        print("Ok. See you another time.")
